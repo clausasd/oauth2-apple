@@ -27,16 +27,16 @@ composer require patrickbussmann/oauth2-apple
 
 ## Usage
 
-Usage is the same as The League's OAuth client, using `\League\OAuth2\Client\Provider\Apple` as the provider.
+Usage is the same as The League's OAuth client, using `\Claus\OAuth2\Client\Provider\Apple` as the provider.
 
 ### Authorization Code Flow
 
 ```php
-$provider = new League\OAuth2\Client\Provider\Apple([
+$provider = new Claus\OAuth2\Client\Provider\Apple([
     'clientId'          => '{apple-client-id}',
     'teamId'            => '{apple-team-id}', // 1A234BFK46 https://developer.apple.com/account/#/membership/ (Team ID)
     'keyFileId'         => '{apple-key-file-id}', // 1ABC6523AA https://developer.apple.com/account/resources/authkeys/list (Key ID)
-    'keyFilePath'       => '{apple-key-file-path}', // __DIR__ . '/AuthKey_1ABC6523AA.p8' -> Download key above 
+    'keyFilePath'       => '{apple-key-file-path}', // __DIR__ . '/AuthKey_1ABC6523AA.p8' -> Download key above
     'redirectUri'       => 'https://example.com/callback-url',
 ]);
 
@@ -132,7 +132,7 @@ Please see [CONTRIBUTING](https://github.com/patrickbussmann/oauth2-apple/blob/m
 
 - [All Contributors](https://github.com/patrickbussmann/oauth2-apple/contributors)
 
-Template for this repository was the [LinkedIn](https://github.com/thephpleague/oauth2-linkedin). 
+Template for this repository was the [LinkedIn](https://github.com/thephpleague/oauth2-linkedin).
 
 ## License
 

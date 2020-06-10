@@ -1,12 +1,12 @@
 {
-    "name": "patrickbussmann/oauth2-apple",
+    "name": "clausasd/oauth2-apple",
     "description": "Sign in with Apple OAuth 2.0 Client Provider for The PHP League OAuth2-Client",
     "license": "MIT",
     "authors": [
         {
-            "name": "Patrick Bußmann",
-            "email": "patrick.bussmann@bussmann-it.de",
-            "homepage": "https://github.com/patrickbussmann"
+            "name": "Claudiu Florea",
+            "email": "claudiu.florea@outlook.com",
+            "homepage": "https://github.com/clausasd"
         }
     ],
     "keywords": [
@@ -32,12 +32,12 @@
     },
     "autoload": {
         "psr-4": {
-            "League\\OAuth2\\Client\\": "src/"
+            "Claus\\OAuth2\\Client\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "League\\OAuth2\\Client\\Test\\": "test/src/"
+            "Claus\\OAuth2\\Client\\Test\\": "test/src/"
         }
     },
     "extra": {

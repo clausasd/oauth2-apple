@@ -1,6 +1,6 @@
 <?php
 
-namespace League\OAuth2\Client\Provider\Exception;
+namespace Claus\OAuth2\Client\Provider\Exception;
 
 class AppleAccessDeniedException extends IdentityProviderException
 {

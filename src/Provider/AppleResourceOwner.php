@@ -1,6 +1,6 @@
-<?php namespace League\OAuth2\Client\Provider;
+<?php namespace Claus\OAuth2\Client\Provider;
 
-use League\OAuth2\Client\Tool\ArrayAccessorTrait;
+use Claus\OAuth2\Client\Tool\ArrayAccessorTrait;
 
 /**
  * @property array $response

@@ -1,18 +1,18 @@
 <?php
 
-namespace League\OAuth2\Client\Provider;
+namespace Claus\OAuth2\Client\Provider;
 
 use Exception;
 use InvalidArgumentException;
 use Lcobucci\JWT\Builder;
 use Lcobucci\JWT\Signer\Ecdsa\Sha256;
 use Lcobucci\JWT\Signer\Key;
-use League\OAuth2\Client\Grant\AbstractGrant;
-use League\OAuth2\Client\Provider\Exception\AppleAccessDeniedException;
-use League\OAuth2\Client\Token\AccessToken;
-use League\OAuth2\Client\Token\AccessTokenInterface;
-use League\OAuth2\Client\Token\AppleAccessToken;
-use League\OAuth2\Client\Tool\BearerAuthorizationTrait;
+use Claus\OAuth2\Client\Grant\AbstractGrant;
+use Claus\OAuth2\Client\Provider\Exception\AppleAccessDeniedException;
+use Claus\OAuth2\Client\Token\AccessToken;
+use Claus\OAuth2\Client\Token\AccessTokenInterface;
+use Claus\OAuth2\Client\Token\AppleAccessToken;
+use Claus\OAuth2\Client\Tool\BearerAuthorizationTrait;
 use Psr\Http\Message\ResponseInterface;
 
 class Apple extends AbstractProvider

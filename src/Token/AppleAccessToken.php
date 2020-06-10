@@ -1,6 +1,6 @@
 <?php
 
-namespace League\OAuth2\Client\Token;
+namespace Claus\OAuth2\Client\Token;
 
 use Firebase\JWT\JWK;
 use Firebase\JWT\JWT;

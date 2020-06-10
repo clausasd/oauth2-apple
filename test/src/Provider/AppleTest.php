@@ -1,17 +1,17 @@
 <?php
 
-namespace League\OAuth2\Client\Test\Provider;
+namespace Claus\OAuth2\Client\Test\Provider;
 
 use Exception;
 use GuzzleHttp\Psr7\Response;
 use InvalidArgumentException;
 use Lcobucci\JWT\Builder;
-use League\OAuth2\Client\Provider\Apple;
-use League\OAuth2\Client\Test\Provider\TestApple;
-use League\OAuth2\Client\Provider\AppleResourceOwner;
-use League\OAuth2\Client\Provider\Exception\AppleAccessDeniedException;
-use League\OAuth2\Client\Token\AccessToken;
-use League\OAuth2\Client\Tool\QueryBuilderTrait;
+use Claus\OAuth2\Client\Provider\Apple;
+use Claus\OAuth2\Client\Test\Provider\TestApple;
+use Claus\OAuth2\Client\Provider\AppleResourceOwner;
+use Claus\OAuth2\Client\Provider\Exception\AppleAccessDeniedException;
+use Claus\OAuth2\Client\Token\AccessToken;
+use Claus\OAuth2\Client\Tool\QueryBuilderTrait;
 use Mockery as m;
 
 class AppleTest extends \PHPUnit_Framework_TestCase
@@ -23,7 +23,7 @@ class AppleTest extends \PHPUnit_Framework_TestCase
 
     protected function setUp()
     {
-        $this->provider = new \League\OAuth2\Client\Provider\Apple([
+        $this->provider = new \Claus\OAuth2\Client\Provider\Apple([
             'clientId' => 'mock.example',
             'teamId' => 'mock.team.id',
             'keyFileId' => 'mock.file.id',
@@ -43,7 +43,7 @@ class AppleTest extends \PHPUnit_Framework_TestCase
 	 */
 	public function testMissingTeamIdDuringInstantiationThrowsException()
 	{
-		new \League\OAuth2\Client\Provider\Apple([
+		new \Claus\OAuth2\Client\Provider\Apple([
 			'clientId' => 'mock.example',
 			'keyFileId' => 'mock.file.id',
 			'keyFilePath' => __DIR__ . '/p256-private-key.p8',
@@ -56,7 +56,7 @@ class AppleTest extends \PHPUnit_Framework_TestCase
 	 */
 	public function testMissingKeyFileIdDuringInstantiationThrowsException()
 	{
-		new \League\OAuth2\Client\Provider\Apple([
+		new \Claus\OAuth2\Client\Provider\Apple([
 			'clientId' => 'mock.example',
 			'teamId' => 'mock.team.id',
 			'keyFilePath' => __DIR__ . '/p256-private-key.p8',
@@ -69,7 +69,7 @@ class AppleTest extends \PHPUnit_Framework_TestCase
 	 */
 	public function testMissingKeyFilePathDuringInstantiationThrowsException()
 	{
-		new \League\OAuth2\Client\Provider\Apple([
+		new \Claus\OAuth2\Client\Provider\Apple([
 			'clientId' => 'mock.example',
 			'teamId' => 'mock.team.id',
 			'keyFileId' => 'mock.file.id',
